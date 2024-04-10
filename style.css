@@ -1,0 +1,923 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #f8f8f8;
+  overflow-x: hidden;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-top: 0.1px; /* Given because of CSS bug. if not then if padding given it will also move */
+  font-family: "Poppins";
+}
+
+/*----------------------------------------------- Navbar Styles Below ----------------------------------------------- */
+.nav {
+  height: 10vh;
+  width: 100%;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  position: relative;
+}
+
+.nav h5 {
+  height: 10vh;
+  width: 20%;
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-right: 2px solid black;
+}
+.nav h1 {
+  height: 100%;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: monument;
+  font-size: 45px;
+  letter-spacing: -2px;
+}
+
+.nav h5:nth-last-child(1) {
+  width: 12%;
+  font-size: 1.5rem;
+}
+.nav h5:nth-last-child(2) {
+  width: 26%;
+}
+
+.center {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.center .center-content {
+  width: 90%;
+  height: 88%;
+  position: relative;
+}
+
+.center-content video {
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+/*----------------------------------------------- Overlay Styles Below ----------------------------------------------- */
+
+.overlay {
+  height: 40%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+
+.over1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: white;
+  padding-bottom: 2vw;
+  padding-right: 1vw;
+}
+
+.over1 h1 {
+  font-family: monument;
+  max-width: 10ch;
+  padding: 0 4vw;
+
+  font-size: 3.5vw;
+  line-height: 8vh;
+}
+
+.over1 h2 {
+  margin: 1vw;
+  padding: 2vw 2.5vw;
+
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.over2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: white;
+  border-top: 2px solid white;
+  position: relative;
+}
+
+.over2 h4 {
+  padding: 1vw 4vw;
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+
+.over2 img {
+  padding: 1vw 4vw;
+  height: 3vw;
+}
+
+/*----------------------------------------------- Scroll Styles Below ----------------------------------------------- */
+
+.scroll {
+  height: 40vh;
+  width: 100%;
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  padding: 1vw 2vw;
+  -webkit-animation: anime 20s linear infinite;
+  animation: anime 20s linear infinite;
+}
+
+.scroll img {
+  height: 70%;
+  width: 15.1%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin: 1vw 1vw;
+  -o-object-position: 30% 40%;
+  object-position: 30% 40%;
+}
+
+@-webkit-keyframes anime {
+  from {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes anime {
+  from {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+/*----------------------------------------------- Alphabets Container Styles Below ----------------------------------------------- */
+.alphabet {
+  height: 10vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0.5vw;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.alphabet h5 {
+  font-size: 1.7vw;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 400;
+  text-decoration: underline;
+  letter-spacing: 2px;
+  padding-right: 3vw;
+}
+.alphabet h6 {
+  font-size: 1vw;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 500;
+  padding: 0.5vw 0.9vw;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  font-weight: 400;
+}
+.alphabet h6:hover {
+  border: 2px solid black;
+}
+
+/*----------------------------------------------- Page2 Styles Below ----------------------------------------------- */
+
+.page2 {
+  height: 100%;
+  width: 90%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 4vw 5vw;
+}
+.page2-part1 {
+  height: 100%;
+  width: 50%;
+  background-image: url("https://images.unsplash.com/photo-1611601679655-7c8bc197f0c6?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+}
+.page2-part2 {
+  height: 100%;
+  width: 50%;
+}
+
+.page2-part2 img {
+  height: 76%;
+  width: 90%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  margin-left: 4.5vw;
+}
+
+.part2-bottom {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-left: 4.5vw;
+  padding-top: 3.2vh;
+  width: 40vw;
+}
+
+.part2-bottom h3 {
+  max-width: 14ch;
+  font-size: 1.5vw;
+  line-height: 4vh;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+.part2-bottom p {
+  max-width: 24ch;
+  font-size: 1vw;
+  font-weight: 500;
+  letter-spacing: -1px;
+  line-height: 2.8vh;
+}
+
+.page2-text {
+  position: relative;
+  padding-left: 4.5vw;
+  top: -30px;
+}
+
+.page2-text h1 {
+  text-transform: uppercase;
+  font-family: monument;
+  font-size: 2.5vw;
+}
+
+/*----------------------------------------------- Page3 Styles Below ----------------------------------------------- */
+.page3 {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.page3 .left img {
+  width: 70%;
+  height: 100%;
+  padding-left: 10vw;
+}
+
+.page3 .left p {
+  max-width: 30ch;
+  margin: 0 5vw;
+  padding: 2vw 0 0 8vw;
+  font-size: 1.4vw;
+  font-weight: 500;
+  line-height: 3.5vh;
+}
+
+.page3 .right {
+  height: 90%;
+  width: 55%;
+}
+.page3 .right img {
+  height: 100%;
+  width: 90%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: 30% 50%;
+  object-position: 30% 50%;
+}
+
+/*----------------------------------------------- Page4 Styles Below ----------------------------------------------- */
+
+.page4 {
+  width: 100vw;
+  height: 100%;
+
+  position: relative;
+}
+.page4 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 89vw;
+  height: 90vh;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: 40% 30%;
+  object-position: 40% 30%;
+}
+
+/*----------------------------------------------- Page5 Styles Below ----------------------------------------------- */
+
+.page5 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.page5 .h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: monument;
+  font-size: 3vw;
+  margin: 12vh 0 12vh 0;
+}
+
+.page5 .container1 {
+  width: 87vw;
+  height: 16vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top: 2px solid black;
+  padding: 3vh 0 1vh 3vh;
+  margin-left: 5vw;
+  position: relative;
+}
+
+.page5 .container1:nth-last-child(1) {
+  border-bottom: 2px solid black;
+}
+.page5 .container1 > * {
+  padding: 0 3vw 1.5vh 3vw;
+  width: 8vw;
+  height: 14vh;
+}
+
+.page5-content .container-text {
+  position: relative;
+  width: 28vw;
+  margin-left: 12vw;
+  margin: auto;
+}
+
+.page5-content .container-text p {
+  line-height: 1.5vh;
+  font-size: 0.9vw;
+  text-transform: uppercase;
+}
+
+.page5-content .container-text1 p {
+  line-height: 1.5vh;
+  font-size: 0.9vw;
+  text-transform: uppercase;
+}
+
+.page5-content .container-text1 h1 {
+  font-size: 2.1vw;
+  padding-top: 3vh;
+  font-weight: 400;
+}
+
+.page5-content .container1 .container-text > h1 {
+  padding-top: 2.5vh;
+  font-size: 2.1vw;
+  font-weight: 400;
+}
+
+.page5-content .container1 > :nth-child(1) {
+  width: 2.5vw;
+  margin-right: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+.page5 .container1 img {
+  position: absolute;
+  left: 1%;
+  width: 8vw;
+  height: 16vh;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: 30% 30%;
+  object-position: 30% 30%;
+  opacity: 0;
+  transition: all ease 1.2s;
+}
+
+.page5 .container1:hover img{
+  opacity: 1;
+  left: 22%;
+}
+
+
+.page5 .container1 p:nth-child(1) {
+  line-height: 2.5vh;
+  padding-top: 0.5vh;
+  text-transform: uppercase;
+}
+
+/*----------------------------------------------- Page6 Styles Below ----------------------------------------------- */
+
+.page6 {
+  width: 89.5vw;
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 5vh;
+  padding: 20vh 5vw 7vh 5vw;
+}
+
+.page6 .page6-content1 {
+  position: relative;
+  height: 100vh;
+  width: 80vw;
+  margin-right: 1.1vw;
+}
+
+.page6 .page6-content1 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: 30% 20%;
+  object-position: 30% 20%;
+}
+
+.page6-content2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 2vh 0.2vw;
+  margin-left: 2.5vw;
+}
+
+.page6-imgcontainer {
+  width: 100%;
+  height: 64%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.page6-imgcontainer img {
+  width: 21.5vw;
+  height: 54vh;
+  margin-top: 5vh;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
+.page6-content2 h1 {
+  font-family: monument;
+  font-size: 3vw;
+  text-transform: uppercase;
+}
+.page6-content2 h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.7vw;
+  max-width: 28ch;
+  margin-top: 3.8vh;
+  line-height: 4vh;
+  font-weight: 600;
+}
+.page6-content2 p {
+  margin-top: 3vh;
+  padding-top: 3vh;
+  font-weight: 500;
+  line-height: 3vh;
+  letter-spacing: -0.6px;
+}
+
+/*----------------------------------------------- Page7 Styles Below ----------------------------------------------- */
+
+.page7 {
+  position: relative;
+  height: 100%;
+  width: 90vw;
+  padding: 4vw 5vw;
+}
+
+.page7 img {
+  width: 89.5vw;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
+/*----------------------------------------------- Page8 Styles Below ----------------------------------------------- */
+
+.page8 {
+  height: 100vh;
+  width: 90vw;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 2vw 5vw;
+}
+.page8-part1 {
+  height: 100vh;
+  width: 50vw;
+  background-image: url("https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: 20% 10%;
+}
+.page8-part2 {
+  height: 100%;
+  width: 50%;
+}
+
+.page8-part2 img {
+  height: 72.5%;
+  width: 93%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: 30% 30%;
+  object-position: 30% 30%;
+  margin-left: 3vw;
+}
+
+.part2-bottom {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-left: 3vw;
+  padding-top: 3.2vh;
+  width: 40vw;
+}
+
+.part2-bottom h3 {
+  max-width: 14ch;
+  font-size: 1.8vw;
+  line-height: 4vh;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+.part2-bottom p {
+  max-width: 24ch;
+  font-size: 1.1vw;
+  font-weight: 500;
+  letter-spacing: -1px;
+  line-height: 2.8vh;
+}
+
+.page2-text {
+  position: relative;
+  padding-left: 4.5vw;
+  top: -30px;
+}
+
+.page2-text h1 {
+  text-transform: uppercase;
+  font-family: monument;
+  font-size: 2.5vw;
+}
+
+/*----------------------------------------------- Page9 Styles Below ----------------------------------------------- */
+
+.page9 {
+  position: relative;
+  width: 100%;
+  margin-top: 6vh;
+  padding: 1vw;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.page9 h1 {
+  font-size: 3vw;
+  display: inline-block;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(40, 40, 40);
+  font-family: monument;
+  margin-right: 16px;
+  -webkit-animation: moving 10s linear infinite;
+  animation: moving 10s linear infinite;
+}
+
+@-webkit-keyframes moving {
+  from {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  to {
+    /* transform: translateX(100%); */
+    -webkit-transform: translateX(calc(-100% - 20px));
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
+@keyframes moving {
+  from {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  to {
+    /* transform: translateX(100%); */
+    -webkit-transform: translateX(calc(-100% - 20px));
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
+/*----------------------------------------------- Page10 Styles Below ----------------------------------------------- */
+.page10 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4vw;
+}
+
+.page10 .page10-heading {
+  font-family: monument;
+  text-transform: uppercase;
+  padding: 9vh 10px 0 10px;
+  margin-left: 1.5vw;
+}
+
+.page10-center,
+.page10-right {
+  margin-left: 4vw;
+}
+
+.page10-center p {
+  letter-spacing: -0.6px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  max-width: 32ch;
+  font-size: 1.4vw;
+}
+.page10-right p {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: -0.6px;
+  font-weight: 500;
+  max-width: 35ch;
+  font-size: 1.4vw;
+}
+
+.page10-center img {
+  width: 31vw;
+}
+.page10-right img {
+  width: 35vw;
+}
+.page10 img {
+  margin-top: 6vh;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: 30% 30%;
+  object-position: 30% 30%;
+  height: 60vh;
+}
+
+.page10-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75vw;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 7vw;
+}
+
+/*----------------------------------------------- Footer Styles Below ----------------------------------------------- */
+
+.footer {
+  width: 100vw;
+  position: relative;
+}
+
+.footer-content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 110vw;
+  height: 30vh;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.footer-content h1 {
+  font-family: monument;
+  padding-top: 2.5vh;
+  padding-left: 2.1vw;
+}
+
+.footer-content h4 {
+  padding: 4vh 2vw 0 2vw;
+  height: 26vh;
+  width: 8vw;
+  font-size: 1.4vw;
+  letter-spacing: -1.2px;
+  font-weight: 500;
+  border-right: 2px solid black;
+}
+
+.footer-content h4:nth-last-child(2) {
+  width: 12%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.footer-content h1 {
+  height: 100%;
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: monument;
+  font-size: 45px;
+  letter-spacing: -2px;
+}
+
+/*----------------------------------------------- Footer Last (The last section) Styles Below ----------------------------------------------- */
+.footer-last {
+  width: 55%;
+}
+
+.footer-last h5 {
+  position: relative;
+  height: 8vh;
+  width: 100%;
+  padding: 4vh 0 0 4vw;
+  font-size: 1.3vw;
+  letter-spacing: -0.5px;
+  font-weight: 500;
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.footer-last .social {
+  padding: 0 0 3vh 4vw;
+  width: 100%;
+  height: 33%;
+}
+.social .icons {
+  margin: 2.5vh 0;
+}
+.social .icons > * {
+  padding: 0 1vw 0 0;
+  font-size: 1.1vw;
+}
+.social p {
+  max-width: 45ch;
+  font-size: 0.8vw;
+  line-height: 2.2vh;
+  font-weight: 500;
+}
