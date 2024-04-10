@@ -466,9 +466,14 @@ body {
 
 .page5-content .container-text {
   position: relative;
-  width: 28vw;
-  margin-left: 12vw;
+  width: 30vw;
+  margin-left: 10vw;
   margin: auto;
+}
+
+#container{
+  /* border: 2px solid red; */
+  margin-left: 5vw;
 }
 
 .page5-content .container-text p {
