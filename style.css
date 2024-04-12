@@ -46,7 +46,7 @@ body {
 .nav h5 {
   height: 10vh;
   width: 20%;
-  font-size: 1.1rem;
+  font-size: 1.2vw;
   font-weight: 500;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,15 +72,15 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   font-family: monument;
-  font-size: 45px;
+  font-size: 2.4vw;
   letter-spacing: -2px;
 }
 
-.nav h5:nth-last-child(1) {
-  width: 12%;
-  font-size: 1.5rem;
-}
 .nav h5:nth-last-child(2) {
+  width: 12%;
+  font-size: 1.5vw;
+}
+.nav h5:nth-last-child(3) {
   width: 26%;
 }
 
@@ -113,6 +113,10 @@ body {
   position: relative;
 }
 
+#menu {
+  display: none;
+}
+
 /*----------------------------------------------- Overlay Styles Below ----------------------------------------------- */
 
 .overlay {
@@ -143,7 +147,6 @@ body {
   font-family: monument;
   max-width: 10ch;
   padding: 0 4vw;
-
   font-size: 3.5vw;
   line-height: 8vh;
 }
@@ -151,7 +154,6 @@ body {
 .over1 h2 {
   margin: 1vw;
   padding: 2vw 2.5vw;
-
   border-radius: 50%;
   border: 2px solid white;
 }
@@ -189,7 +191,11 @@ body {
   width: 100%;
   white-space: nowrap;
   overflow-y: hidden;
-  overflow-x: hidden;
+  overflow-x: auto;
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
 }
 
 .container {
@@ -198,7 +204,7 @@ body {
   display: inline-block;
   padding: 1vw 2vw;
   -webkit-animation: anime 20s linear infinite;
-  animation: anime 20s linear infinite;
+  animation: anime 10s linear infinite;
 }
 
 .scroll img {
@@ -280,7 +286,7 @@ body {
 
 .page2 {
   height: 100%;
-  width: 90%;
+  width: calc(100% - 10vw);
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -298,6 +304,7 @@ body {
   width: 50%;
   background-image: url("https://images.unsplash.com/photo-1611601679655-7c8bc197f0c6?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
+  background-position: 30% 5%;
 }
 .page2-part2 {
   height: 100%;
@@ -310,11 +317,11 @@ body {
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: center;
-  object-position: center;
+  object-position: 30% 25%;
   margin-left: 4.5vw;
 }
 
-.part2-bottom {
+.page2 .part2-bottom {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -323,32 +330,31 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-left: 4.5vw;
-  padding-top: 3.2vh;
+  padding-top: 0.5vw;
   width: 40vw;
 }
 
-.part2-bottom h3 {
+.page2 .part2-bottom h3 {
   max-width: 14ch;
   font-size: 1.5vw;
-  line-height: 4vh;
+  line-height: 2rem;
   font-weight: 500;
   letter-spacing: -1px;
 }
-.part2-bottom p {
+.page2 .part2-bottom p {
   max-width: 24ch;
   font-size: 1vw;
   font-weight: 500;
   letter-spacing: -1px;
-  line-height: 2.8vh;
+  line-height: 1.2rem;
 }
-
 .page2-text {
   position: relative;
   padding-left: 4.5vw;
   top: -30px;
 }
 
-.page2-text h1 {
+.page2 .page2-text h1 {
   text-transform: uppercase;
   font-family: monument;
   font-size: 2.5vw;
@@ -382,7 +388,7 @@ body {
   padding: 2vw 0 0 8vw;
   font-size: 1.4vw;
   font-weight: 500;
-  line-height: 3.5vh;
+  line-height: 1.3rem;
 }
 
 .page3 .right {
@@ -401,9 +407,8 @@ body {
 /*----------------------------------------------- Page4 Styles Below ----------------------------------------------- */
 
 .page4 {
-  width: 100vw;
+  width: 100%;
   height: 100%;
-
   position: relative;
 }
 .page4 img {
@@ -425,7 +430,7 @@ body {
 
 .page5 {
   width: 100%;
-  height: 100%;
+  height: 120vh;
   position: relative;
 }
 
@@ -471,19 +476,18 @@ body {
   margin: auto;
 }
 
-#container{
-  /* border: 2px solid red; */
+#container {
   margin-left: 5vw;
 }
 
 .page5-content .container-text p {
-  line-height: 1.5vh;
+  line-height: 1rem;
   font-size: 0.9vw;
   text-transform: uppercase;
 }
 
 .page5-content .container-text1 p {
-  line-height: 1.5vh;
+  line-height: 1rem;
   font-size: 0.9vw;
   text-transform: uppercase;
 }
@@ -524,14 +528,13 @@ body {
   transition: all ease 1.2s;
 }
 
-.page5 .container1:hover img{
+.page5 .container1:hover img {
   opacity: 1;
   left: 22%;
 }
 
-
 .page5 .container1 p:nth-child(1) {
-  line-height: 2.5vh;
+  line-height: 1rem;
   padding-top: 0.5vh;
   text-transform: uppercase;
 }
@@ -539,8 +542,8 @@ body {
 /*----------------------------------------------- Page6 Styles Below ----------------------------------------------- */
 
 .page6 {
-  width: 89.5vw;
-  height: 100%;
+  width: calc(100% - 10vw);
+  height: 100vh;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -551,13 +554,13 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 5vh;
-  padding: 20vh 5vw 7vh 5vw;
+  margin-top: 1vh;
+  padding: 0vh 5vw 3vh 5vw;
 }
 
 .page6 .page6-content1 {
   position: relative;
-  height: 100vh;
+  height: 100%;
   width: 80vw;
   margin-right: 1.1vw;
 }
@@ -572,16 +575,17 @@ body {
 }
 
 .page6-content2 {
+ 
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 96vh;
   padding: 2vh 0.2vw;
   margin-left: 2.5vw;
 }
 
 .page6-imgcontainer {
   width: 100%;
-  height: 64%;
+  height: 65vh;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -595,8 +599,8 @@ body {
 }
 .page6-imgcontainer img {
   width: 21.5vw;
-  height: 54vh;
-  margin-top: 5vh;
+  height: 58vh;
+  margin-top: 3vh;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: center;
@@ -613,14 +617,13 @@ body {
   font-size: 1.7vw;
   max-width: 28ch;
   margin-top: 3.8vh;
-  line-height: 4vh;
+  line-height: 1.7rem;
   font-weight: 600;
 }
 .page6-content2 p {
-  margin-top: 3vh;
-  padding-top: 3vh;
+  margin-top: 4vh;
   font-weight: 500;
-  line-height: 3vh;
+  line-height: 1.3rem;
   letter-spacing: -0.6px;
 }
 
@@ -630,11 +633,11 @@ body {
   position: relative;
   height: 100%;
   width: 90vw;
-  padding: 4vw 5vw;
+  padding: 1.5vw 5vw;
 }
 
 .page7 img {
-  width: 89.5vw;
+  width: 100%;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
@@ -681,7 +684,7 @@ body {
   margin-left: 3vw;
 }
 
-.part2-bottom {
+.page8 .part2-bottom {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -690,32 +693,32 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-left: 3vw;
-  padding-top: 3.2vh;
+  padding-top: 2vh;
   width: 40vw;
 }
 
-.part2-bottom h3 {
+.page8 .part2-bottom h3 {
   max-width: 14ch;
   font-size: 1.8vw;
-  line-height: 4vh;
+  line-height: 2rem;
   font-weight: 500;
   letter-spacing: -1px;
 }
-.part2-bottom p {
+.page8 .part2-bottom p {
   max-width: 24ch;
   font-size: 1.1vw;
   font-weight: 500;
   letter-spacing: -1px;
-  line-height: 2.8vh;
+  line-height: 1.2rem;
 }
 
-.page2-text {
+.page8 .page2-text {
   position: relative;
   padding-left: 4.5vw;
   top: -30px;
 }
 
-.page2-text h1 {
+.page8 .page2-text h1 {
   text-transform: uppercase;
   font-family: monument;
   font-size: 2.5vw;
@@ -725,7 +728,7 @@ body {
 
 .page9 {
   position: relative;
-  width: 100%;
+  width: calc(100% - 2vw);
   margin-top: 6vh;
   padding: 1vw;
   border-bottom: 2px solid black;
@@ -733,6 +736,10 @@ body {
   white-space: nowrap;
   overflow-x: hidden;
   overflow-y: auto;
+}
+
+.page::-webkit-scrollbar {
+  display: none;
 }
 .page9 h1 {
   font-size: 3vw;
@@ -773,12 +780,12 @@ body {
 
 /*----------------------------------------------- Page10 Styles Below ----------------------------------------------- */
 .page10 {
-  width: 100%;
+  width: calc(100% - 6vw);
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 4vw;
+  padding: 3vw;
 }
 
 .page10 .page10-heading {
@@ -827,7 +834,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 75vw;
+  width: 78vw;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -837,92 +844,92 @@ body {
 /*----------------------------------------------- Footer Styles Below ----------------------------------------------- */
 
 .footer {
-  width: 100vw;
-  position: relative;
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-content {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  width: 110vw;
-  height: 30vh;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+  flex-direction: row;
+  height: 80%;
+  width: 60%;
+  border: 2px solid black;
 }
 
 .footer-content h1 {
-  font-family: monument;
-  padding-top: 2.5vh;
-  padding-left: 2.1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  font-size: 3.5rem;
+  letter-spacing: -2px;
 }
 
 .footer-content h4 {
-  padding: 4vh 2vw 0 2vw;
-  height: 26vh;
-  width: 8vw;
-  font-size: 1.4vw;
-  letter-spacing: -1.2px;
   font-weight: 500;
-  border-right: 2px solid black;
+  border-right: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 1.3rem;
+  letter-spacing: -1.2px;
 }
 
 .footer-content h4:nth-last-child(2) {
-  width: 12%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  width: 100%;
+  border-right: 2px solid black;
 }
-
-.footer-content h1 {
-  height: 100%;
-  width: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
+.footer-content h4:nth-last-child(1) {
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  font-family: monument;
-  font-size: 45px;
-  letter-spacing: -2px;
+  align-items: center;
+  width: 100%;
 }
 
 /*----------------------------------------------- Footer Last (The last section) Styles Below ----------------------------------------------- */
 .footer-last {
-  width: 55%;
+  height: 80.5%;
+  width: 50%;
+  border-bottom: 2px solid black;
 }
 
 .footer-last h5 {
+  border-top: 2px solid black;
   position: relative;
-  height: 8vh;
-  width: 100%;
-  padding: 4vh 0 0 4vw;
-  font-size: 1.3vw;
+  height: 36.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  font-size: 1.4rem;
   letter-spacing: -0.5px;
   font-weight: 500;
   border-bottom: 2px solid rgb(0, 0, 0);
 }
 
 .footer-last .social {
-  padding: 0 0 3vh 4vw;
-  width: 100%;
-  height: 33%;
+  padding: 1vh 0 0 4vw;
+  width: 80%;
+  height: 52%;
 }
 .social .icons {
   margin: 2.5vh 0;
 }
 .social .icons > * {
   padding: 0 1vw 0 0;
-  font-size: 1.1vw;
+  font-size: 1.2vw;
 }
 .social p {
-  max-width: 45ch;
-  font-size: 0.8vw;
-  line-height: 2.2vh;
+  max-width: 40ch;
+  font-size: 0.95vw;
+  line-height: 1rem;
   font-weight: 500;
 }
