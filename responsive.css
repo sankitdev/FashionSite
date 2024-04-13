@@ -1,11 +1,11 @@
-@media only screen and (min-width: 601px) and (max-width: 900px) {
+@media only screen and (min-width: 651px) and (max-width: 900px) {
   .nav {
     height: 10vh;
   }
   .nav h5 {
     height: 10vh;
     width: 20%;
-    font-size: 1.6vw;
+    font-size: 1.9vw;
     font-weight: 500;
   }
   .nav h1 {
@@ -22,7 +22,589 @@
   .nav h5:nth-last-child(3) {
     width: 35%;
   }
+
+  /*----------------------------------------------- Video Section Overlay Styles Below ------------------------------------------ */
+  .overlay {
+    height: 33%;
+    position: absolute;
+    bottom: 0;
+    backdrop-filter: none;
+  }
+
+  .over1 h1 {
+    font-family: monument;
+    max-width: 10ch;
+    padding: 0 4vw;
+    font-size: 5.2vw;
+    line-height: 3.3rem;
+  }
+  .over1 h2 {
+    padding: 2vw 3.5vw;
+  }
+
+  .over2 h4 {
+    padding: 3vw 6vw;
+    font-size: 2.3vw;
+  }
+
+  .over2 img {
+    padding: 3vw 4vw;
+    height: 3vw;
+    width: 4vw;
+  }
+  /*----------------------------------------------- Photo Marque Styles Below ----------------------------------------------- */
+
+  .container {
+    padding: 0 1.2vw;
+
+  }
+
+  .scroll {
+    height: 23vh;
+    width: 100%;
+    padding: 0 0 0 0;
+  }
+
+  .scroll img {
+    height: 100%;
+    width: 23.3%;
+    margin: 0 1vw;
+  }
+  /*----------------------------------------------- Alphabet Section Styles Below ----------------------------------------------- */
+
+  .alphabet {
+    height: 10vh;
+    width: 99vw;
+    gap: 1;
+    padding: 0;
+    margin-top: 3vw;
+  }
+
+  .alphabet h5 {
+    font-size: 3.2vw;
+    padding-right: 0.5vw;
+  }
+
+  .alphabet h6 {
+    font-size: 2.3vw;
+    padding: 0vw 0.5vw;
+  }
+
+  /*----------------------------------------------- Page2 Photo Styles Below ----------------------------------------------- */
+
+  .page2 {
+    height: 130vh;
+    width: 90%;
+    margin-top: 1vh;
+    position: relative;
+    display: block;
+  }
+  .page2-text h1 {
+    /* font-size: 5vw;
+    padding-left: 1vw; */
+    display: none;
+  }
+  
+  /* First Image Section below */
+
+  .page2-part1 {
+    padding: 4vw;
+    width: 80vw;
+    height: 50vh;
+    background-position: 30% 5%;
+  }
+
+  /* Second Image Section below */
+
+  .page2-part2 {
+    width: 88vw;
+    height: 55vh;
+    margin-top:3vh;
+  }
+  .page2-part2 img {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    object-position: 30% 25%;
+  }
+
+/* Second Image Bottom Text Style below */
+
+  .page2 .part2-bottom {
+    height: 15vh;
+    margin-left: 0;
+    width: 100%;
+    padding: 0;
+    margin-top: 2vh; 
+  }
+  .page2 .part2-bottom h3 {
+    max-width: 13ch;
+    font-size: 3.8vw;
+    line-height: 1.5rem;
+    font-weight: 500;
+    letter-spacing: -1px;
+  }
+  .page2 .part2-bottom p {
+    max-width: 25ch;
+    font-size: 2.5vw;
+    letter-spacing: -0.4px;
+    line-height: 1.2rem;
+  }
+
+/*----------------------------------------------- Page3 Styles Below ----------------------------------------------- */
+
+  .page3 {
+    width: 100vw;
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  .page3 .left img {
+    width: 42vw;
+    height: 100%;
+    padding:0;
+    margin: 0;
+  }
+  
+  .page3 .left p {
+    max-width: 22ch;
+    margin: 0 2vw;
+    padding: 8vh 0 0 5vw;
+    font-size: 2.5vw;
+    font-weight: 500;
+    line-height: 1.2rem;
+  }
+  .page3 .right {
+    padding: 0;
+    margin: 0;
+    margin-right: 5vw;
+    height: 80%;
+    width: 50vw;
+  }
+  .page3 .right img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 30% 50%;
+  }
+  
+/*----------------------------------------------- Page4 Styles Below ----------------------------------------------- */
+  .page4 {
+    width: 100vw;
+    height: 60vh;
+  }
+
+  .page4 img {
+    width: 90%;
+    height: 100%;
+    padding: 0;
+  }
+
+  /*----------------------------------------------- Page5 Styles Below ----------------------------------------------- */
+.page5 {
+
+  width: 100%;
+  height: 65%;
+  position: relative;
 }
+
+.page5 .h1 {
+
+  text-align: center;
+  text-transform: uppercase;
+  font-family: monument;
+  font-size: 6vw;
+  margin: 5vh 0;
+}
+
+.page5 .container1 {
+  
+  width: 85vw;
+  height: 10vh;
+  padding: 1vh 1vw 0 1vw;
+  margin-left: 4vw;
+  position: relative;
+}
+
+.page5 .container1:nth-last-child(1) {
+  border-bottom: 2px solid black;
+}
+.page5 .container1 > * {
+
+  padding: 0 3vw 1vh 3vw;
+  width: 8vw;
+  height: 5vh;
+}
+
+.page5-content .container-text {
+  position: relative;
+  width: 36vw;
+  margin-left: 22vw;
+}
+
+.page5-content .container1 .container-text > h1 {
+
+  padding-top: 0;
+  font-size: 3.5vw;
+  width: 40vw;
+  font-weight: 500;
+}
+
+#container{
+
+  margin-left: 10vw;
+}
+
+.page5-content .container-text p {
+
+  line-height: 1vh;
+  font-size: 2.1vw;
+  text-transform: uppercase;
+ 
+}
+
+.page5-content .container-text1 p {
+  line-height: 1vh;
+  font-size: 2.1vw;
+  text-transform: uppercase;
+  width: 20vw;
+}
+
+.page5-content .container-text1{
+  width: 10vw;
+}
+
+.page5-content .container-text1 h1 {
+  font-size: 4vw;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+.page5 .container1 img {
+  position: absolute;
+  left: 1%;
+  width: 14vw;
+  height: 10vh;
+}
+
+.page5 .container1:hover img{
+  opacity: 1;
+  left: 22%;
+}
+
+.page5 .container1 p:nth-child(1) {
+
+  font-size: 0.8rem;
+  width: 15vw;
+  height: 4vh;
+  line-height: 0.8rem;
+  padding-top: 0;
+  letter-spacing: -0.7px;
+}
+
+/*----------------------------------------------- Page6 Styles Below ----------------------------------------------- */
+
+.page6 {
+  margin: 0;
+  height: 179vh;
+  width: calc(100vw - 10vw);
+  padding: 2vh 5vw 5vh 5vw;
+  display: block;
+}
+
+.page6 .page6-content1 {
+  height: 60vh;
+  width: 90vw;
+}
+
+.page6 .page6-content1 img{
+  object-position: 20% 8%;
+}
+.page6-content2 {
+  width: 88vw;
+  height: 80%;
+  padding: 0;
+  margin: 0;
+}
+
+/* .page6-content2 > :nth-child(-n+3) {
+  padding: 3vh 0 1vh 0;
+} */
+
+.page6-content2 h1 {
+  padding-top: 3vh;
+  font-family: monument;
+  font-size: 6vw;
+  text-transform: uppercase;
+}
+.page6-content2 h3 {
+  padding-top: 1.5vh;
+  max-width: 50ch;
+  font-size: 1.25rem;
+  margin-top: 0;
+  line-height: 1.2rem;
+}
+.page6-content2 p {
+  padding-top: 2vh;
+  font-size: 1rem;
+  margin-top: 1rem;
+  max-width: 60ch;
+  line-height: 1.2rem;
+  letter-spacing: -0.6px;
+}
+
+.page6-imgcontainer {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 100%;
+  height: 50vh;
+}
+.page6-imgcontainer img {
+  width: 100%;
+  height: 45vh;
+  padding: 0;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  object-position: 30% 20%;
+}
+/*----------------------------------------------- Page7 Styles Below ----------------------------------------------- */
+
+.page7 {
+  height: 50vh;
+  width: calc(100% - 8vw);
+  padding: 4vw;
+}
+
+.page7 img {
+  margin: 0;
+  padding: 0;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+/*----------------------------------------------- Page8 Styles Below ----------------------------------------------- */
+
+.page8 {
+  display: block;
+  height: 125vh;
+  width: 90vw;
+  padding: 3vw 4vw;
+}
+.page8-part1 {
+  height: 50vh;
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: 20% 10%;
+}
+.page8-part2 {
+  height: 100vh;
+  width: 90vw;
+}
+
+.page8-part2 img {
+  margin-top: 3vh;
+  height: 50%;
+  width: 100%;
+  object-position: 30% 30%;
+  margin-left: 0;
+}
+
+.page8 .part2-bottom {
+  height: 15vh;
+  margin-left: 0;
+  width: 100%;
+  padding: 0;
+  margin-top: 1vh; 
+}
+.page8 .part2-bottom h3 {
+  max-width: 13ch;
+  font-size: 4vw;
+  line-height: 1.7rem;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+.page8 .part2-bottom p {
+  max-width: 22ch;
+  font-size: 2.5vw;
+  letter-spacing: -0.4px;
+  line-height: 1.1rem;
+}
+
+
+
+/*----------------------------------------------- Page9 Styles Below ----------------------------------------------- */
+
+.page9 {
+  height: 12vh;
+  width: calc(100% - 2vw);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.page::-webkit-scrollbar{
+  display: none;
+}
+.page9 h1 {
+  /* padding-top: 1.5vh; */
+  font-size: 8vw;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-right: 16px;
+}
+
+
+/*----------------------------------------------- Page10 Styles Below ----------------------------------------------- */
+.page10 {
+  height: 142vh;
+  width: 92vw;
+  display: block;
+  padding: 4vw;
+}
+.page10-content {
+  display: block;
+  padding: 0;
+  width: 100%;
+  margin: 0;
+}
+.page10 .page10-heading {
+  padding: 0;
+  margin: 3vh 0;
+}
+
+.page10-center,
+.page10-right {
+  margin: 0;
+}
+
+.page10-center p {
+  letter-spacing: -0.6px;
+  max-width: 45ch;
+  font-size: 3vw;
+}
+.page10-right p {
+  letter-spacing: -0.6px;
+  max-width: 45ch;
+  font-size: 3vw;
+}
+.page10 img {
+  padding: 0;
+  margin: 3.5vh 0;
+  width: 100%;
+  height: 50vh;
+}
+
+
+
+/*----------------------------------------------- Footer Styles Below ----------------------------------------------- */
+
+.footer {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 60%;
+  border: 2px solid black;
+}
+
+
+.footer-content h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12vh;
+  width: 100%;
+  padding: 0;
+  font-size: 1.8rem;
+  letter-spacing: -2px;
+  border-bottom: 2px solid black;
+}
+
+.footer-content h4 {
+  border-right: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  height: 10vh;
+  width: 100%;
+  font-size: 1.2rem;
+  letter-spacing: -1.2px;
+}
+
+.footer-content h4:nth-last-child(2) {
+  width: 100%;
+  border-bottom: 2px solid black;
+}
+.footer-content h4:nth-last-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/*----------------------------------------------- Footer Last (The last section) Styles Below ----------------------------------------------- */
+.footer-last {
+  height: 80.5%;
+  width: 90%;
+  border-bottom: 2px solid black;
+}
+
+.footer-last h5 {
+  border-top: 2px solid black;
+  position: relative;
+  height: 36.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  font-size: 1.15rem;
+  letter-spacing: -0.5px;
+  font-weight: 500;
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.footer-last .social {
+  padding: 1vw 0 0 6vw;
+  width: 80%;
+  height: 52%;
+}
+.social .icons {
+  margin: 2.5vh 0;
+}
+.social .icons > * {
+  padding: 0 1vw 0 0;
+  font-size: 4vw;
+}
+.social p {
+  max-width: 40ch;
+  font-size: 0.8rem;
+  line-height: 0.95rem;
+  font-weight: 500;
+}
+}
+
+
+
+
+
+
+
+
 
 @media (max-width: 650px) {
   /*----------------------------------------------- Nav Styles Below ----------------------------------------------- */
@@ -30,7 +612,9 @@
     height: 8vh;
     width: calc(100vw - 16vw);
     padding: 0 8vw;
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   .nav h5 {
     display: none;
@@ -39,6 +623,12 @@
     font-family: monument;
     font-size: 5vw;
     letter-spacing: -0.9px;
+  }
+  .nav.active h5{
+    display: block;
+  }
+  .nav.active h1{
+    display: none;
   }
   #menu {
     display: block;
